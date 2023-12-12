@@ -28,8 +28,6 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ИнфБроньE', 'i-i-s-terminal1-инф-бронь', {
-    пассажир: belongsTo('i-i-s-terminal1-пассажир', 'Пассажир', {
-      фИО: attr('ФИО', { index: 1 })
-    }, { index: 0, displayMemberPath: 'фИО' })
+    
   });
 };

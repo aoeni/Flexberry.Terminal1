@@ -29,10 +29,7 @@ namespace IIS.Terminal1
     [AutoAltered()]
     [Caption("Инф бронь")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
-    [View("ИнфБроньE", new string[] {
-            "Пассажир as \'Пассажир\'",
-            "Пассажир.ФИО as \'ФИО\'"})]
-    [MasterViewDefineAttribute("ИнфБроньE", "Пассажир", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
+    [View("ИнфБроньE", new string[0])]
     public class ИнфБронь : ICSSoft.STORMNET.DataObject
     {
         

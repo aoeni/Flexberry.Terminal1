@@ -28,29 +28,7 @@
       "name": "ИнфБроньE",
       "modelName": "i-i-s-terminal1-инф-бронь",
       "attrs": [],
-      "belongsTo": [
-        {
-          "lookupValue": "ФИО",
-          "lookupValueField": "фИО",
-          "relationName": "Пассажир",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "фИО",
-              "caption": "ФИО",
-              "hidden": false,
-              "index": 1
-            }
-          ],
-          "index": 0,
-          "type": "standard",
-          "caption": "Пассажир",
-          "name": "пассажир",
-          "relatedTo": "i-i-s-terminal1-пассажир",
-          "inverse": null
-        }
-      ],
+      "belongsTo": [],
       "hasMany": []
     }
   ],
