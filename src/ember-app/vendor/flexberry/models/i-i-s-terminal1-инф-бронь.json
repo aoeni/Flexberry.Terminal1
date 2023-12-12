@@ -33,41 +33,13 @@
           "lookupValue": "ФИО",
           "lookupValueField": "фИО",
           "relationName": "Пассажир",
-          "belongsTo": [
-            {
-              "lookupValue": null,
-              "lookupValueField": null,
-              "relationName": "Пассажир.КлассБилета",
-              "belongsTo": [],
-              "hidden": false,
-              "attrs": [
-                {
-                  "name": "класс",
-                  "caption": "Класс билета",
-                  "hidden": false,
-                  "index": 2
-                },
-                {
-                  "name": "место",
-                  "caption": "Место",
-                  "hidden": false,
-                  "index": 3
-                }
-              ],
-              "index": -1,
-              "type": null,
-              "caption": "",
-              "name": "классБилета",
-              "relatedTo": "i-i-s-terminal1-класс-билета",
-              "inverse": null
-            }
-          ],
+          "belongsTo": [],
           "hidden": false,
           "attrs": [
             {
               "name": "фИО",
               "caption": "ФИО",
-              "hidden": true,
+              "hidden": false,
               "index": 1
             }
           ],
