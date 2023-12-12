@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-terminal1-класс-билета-e",
+  "editForm": "i-i-s-terminal1-класс-билета-e",
+  "external": false,
+  "caption": "Класс билета",
+  "name": "IISTerminal1КлассБилетаL",
+  "className": "КлассБилетаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-terminal1-класс-билета",
+      "modelProjection": "КлассБилетаL"
+    }
+  ]
+}

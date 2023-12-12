@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-terminal1-рейс-e",
+  "editForm": "i-i-s-terminal1-рейс-e",
+  "external": false,
+  "caption": "Рейс",
+  "name": "IISTerminal1РейсL",
+  "className": "РейсL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-terminal1-рейс",
+      "modelProjection": "РейсL"
+    }
+  ]
+}

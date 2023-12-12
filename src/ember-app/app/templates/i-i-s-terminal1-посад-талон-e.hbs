@@ -1,0 +1,63 @@
+<h3 class="ui header">{{t "forms.i-i-s-terminal1-посад-талон-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-terminal1-посад-талон-e.пассажир-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.пассажир
+      displayAttributeName="фИО"
+      autocomplete=true
+      relationName="пассажир"
+      projection="ПассажирL"
+      title=(t "forms.i-i-s-terminal1-посад-талон-e.пассажир-caption")
+      readonly=readonly
+      componentName="пассажирLookup"
+      class=(if (v-get validationModel "пассажир" "isInvalid") "error")
+      data-test-i-i-s-terminal1-посад-талон-e-пассажир=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пассажир" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-terminal1-посад-талон-e.рейс-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.рейс
+      displayAttributeName="куда"
+      autocomplete=true
+      relationName="рейс"
+      projection="РейсL"
+      title=(t "forms.i-i-s-terminal1-посад-талон-e.рейс-caption")
+      readonly=readonly
+      componentName="рейсLookup"
+      class=(if (v-get validationModel "рейс" "isInvalid") "error")
+      data-test-i-i-s-terminal1-посад-талон-e-рейс=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "рейс" "message")}}
+  </div>
+</form>

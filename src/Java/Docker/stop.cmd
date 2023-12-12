@@ -1,0 +1,1 @@
+docker-compose -p terminal1-java down

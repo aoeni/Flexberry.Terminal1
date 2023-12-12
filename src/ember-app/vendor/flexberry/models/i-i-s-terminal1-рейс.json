@@ -1,0 +1,194 @@
+﻿{
+  "name": "IISTerminal1Рейс",
+  "modelName": "i-i-s-terminal1-рейс",
+  "className": "Рейс",
+  "nameSpace": "IIS.Terminal1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времяОтправ",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "выход",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "конецПосад",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "куда",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "начПосад",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "отКуда",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "инфБронь",
+      "relatedTo": "i-i-s-terminal1-инф-бронь",
+      "inverse": "рейс"
+    }
+  ],
+  "projections": [
+    {
+      "name": "РейсE",
+      "modelName": "i-i-s-terminal1-рейс",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "куда",
+          "caption": "Куда",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "отКуда",
+          "caption": "От куда",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "времяОтправ",
+          "caption": "Время отправления",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "начПосад",
+          "caption": "Начало посадки",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "конецПосад",
+          "caption": "Конец посадки",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "выход",
+          "caption": "Выход",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ИнфБроньE",
+          "caption": "Информация бронирования",
+          "name": "инфБронь",
+          "relatedTo": "i-i-s-terminal1-инф-бронь",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "РейсL",
+      "modelName": "i-i-s-terminal1-рейс",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "куда",
+          "caption": "Куда",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "отКуда",
+          "caption": "От куда",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "времяОтправ",
+          "caption": "Время отправления",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "начПосад",
+          "caption": "Начало посадки",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "конецПосад",
+          "caption": "Конец посадки",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "выход",
+          "caption": "Выход",
+          "hidden": false,
+          "index": 6
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

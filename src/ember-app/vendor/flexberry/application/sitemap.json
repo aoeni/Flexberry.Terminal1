@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "Terminal1",
+  "applicationTitle": "Terminal1",
+  "items": [
+    {
+      "link": null,
+      "menuName": "terminal1",
+      "caption": "Terminal1",
+      "title": "Terminal1",
+      "children": [
+        {
+          "link": "i-i-s-terminal1-посад-талон-l",
+          "menuName": null,
+          "caption": "Посад талон",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-terminal1-класс-билета-l",
+          "menuName": null,
+          "caption": "Класс билета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-terminal1-коды-l",
+          "menuName": null,
+          "caption": "Коды",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-terminal1-рейс-l",
+          "menuName": null,
+          "caption": "Рейс",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-terminal1-пассажир-l",
+          "menuName": null,
+          "caption": "Пассажир",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

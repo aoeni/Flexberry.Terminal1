@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-terminal1-коды-e",
+  "editForm": "i-i-s-terminal1-коды-e",
+  "external": false,
+  "caption": "Коды",
+  "name": "IISTerminal1КодыL",
+  "className": "КодыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-terminal1-коды",
+      "modelProjection": "КодыL"
+    }
+  ]
+}

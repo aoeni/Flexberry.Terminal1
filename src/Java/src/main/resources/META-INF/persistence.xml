@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Terminal1.model.InfBron</class>
+        <class>Terminal1.model.PosadTalon</class>
+        <class>Terminal1.model.KlassBileta</class>
+        <class>Terminal1.model.Kody</class>
+        <class>Terminal1.model.Rejs</class>
+        <class>Terminal1.model.Passazhir</class>
+        <class>Terminal1.model.FlexberryAdvLimit</class>
+        <class>Terminal1.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Terminal1.model.NewPlatformFlexberryServicesLock</class>
+        <class>Terminal1.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

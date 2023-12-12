@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-terminal1-пассажир-e",
+  "editForm": "i-i-s-terminal1-пассажир-e",
+  "external": false,
+  "caption": "Пассажир",
+  "name": "IISTerminal1ПассажирL",
+  "className": "ПассажирL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-terminal1-пассажир",
+      "modelProjection": "ПассажирL"
+    }
+  ]
+}

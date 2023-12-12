@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISTerminal1КлассБилета",
+  "modelName": "i-i-s-terminal1-класс-билета",
+  "className": "КлассБилета",
+  "nameSpace": "IIS.Terminal1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "класс",
+      "type": "i-i-s-terminal1-вид-билета",
+      "flexberryType": "ВидБилета",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "место",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлассБилетаE",
+      "modelName": "i-i-s-terminal1-класс-билета",
+      "attrs": [
+        {
+          "name": "класс",
+          "caption": "Класс",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "место",
+          "caption": "Место",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КлассБилетаL",
+      "modelName": "i-i-s-terminal1-класс-билета",
+      "attrs": [
+        {
+          "name": "класс",
+          "caption": "Класс",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "место",
+          "caption": "Место",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-terminal1-посад-талон-e",
+  "editForm": "i-i-s-terminal1-посад-талон-e",
+  "external": false,
+  "caption": "Посад талон",
+  "name": "IISTerminal1ПосадТалонL",
+  "className": "ПосадТалонL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-terminal1-посад-талон",
+      "modelProjection": "ПосадТалонL"
+    }
+  ]
+}

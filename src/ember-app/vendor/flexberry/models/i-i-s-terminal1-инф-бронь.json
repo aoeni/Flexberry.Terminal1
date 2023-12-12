@@ -1,0 +1,109 @@
+﻿{
+  "name": "IISTerminal1ИнфБронь",
+  "modelName": "i-i-s-terminal1-инф-бронь",
+  "className": "ИнфБронь",
+  "nameSpace": "IIS.Terminal1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "пассажир",
+      "relatedTo": "i-i-s-terminal1-пассажир",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "рейс",
+      "relatedTo": "i-i-s-terminal1-рейс",
+      "inverse": "инфБронь"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ИнфБроньE",
+      "modelName": "i-i-s-terminal1-инф-бронь",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Пассажир",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Пассажир.Коды",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "кодБрони",
+                  "caption": "Код бронирования",
+                  "hidden": false,
+                  "index": 0
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "коды",
+              "relatedTo": "i-i-s-terminal1-коды",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Пассажир.КлассБилета",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "класс",
+                  "caption": "Класс билета",
+                  "hidden": false,
+                  "index": 3
+                },
+                {
+                  "name": "место",
+                  "caption": "Место",
+                  "hidden": false,
+                  "index": 4
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "классБилета",
+              "relatedTo": "i-i-s-terminal1-класс-билета",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Код бронирования",
+          "name": "пассажир",
+          "relatedTo": "i-i-s-terminal1-пассажир",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

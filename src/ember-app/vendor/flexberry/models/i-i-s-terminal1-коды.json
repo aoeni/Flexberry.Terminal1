@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISTerminal1Коды",
+  "modelName": "i-i-s-terminal1-коды",
+  "className": "Коды",
+  "nameSpace": "IIS.Terminal1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кодБрони",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КодыE",
+      "modelName": "i-i-s-terminal1-коды",
+      "attrs": [
+        {
+          "name": "кодБрони",
+          "caption": "Код брони",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КодыL",
+      "modelName": "i-i-s-terminal1-коды",
+      "attrs": [
+        {
+          "name": "кодБрони",
+          "caption": "Код брони",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

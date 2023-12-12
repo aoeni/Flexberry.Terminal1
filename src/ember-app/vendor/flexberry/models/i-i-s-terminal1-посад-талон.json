@@ -1,0 +1,131 @@
+﻿{
+  "name": "IISTerminal1ПосадТалон",
+  "modelName": "i-i-s-terminal1-посад-талон",
+  "className": "ПосадТалон",
+  "nameSpace": "IIS.Terminal1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "пассажир",
+      "relatedTo": "i-i-s-terminal1-пассажир",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "рейс",
+      "relatedTo": "i-i-s-terminal1-рейс",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПосадТалонE",
+      "modelName": "i-i-s-terminal1-посад-талон",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Пассажир",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Пассажир",
+          "name": "пассажир",
+          "relatedTo": "i-i-s-terminal1-пассажир",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Куда",
+          "lookupValueField": "куда",
+          "relationName": "Рейс",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "куда",
+              "caption": "Куда",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Рейс",
+          "name": "рейс",
+          "relatedTo": "i-i-s-terminal1-рейс",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПосадТалонL",
+      "modelName": "i-i-s-terminal1-посад-талон",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Пассажир",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "пассажир",
+          "relatedTo": "i-i-s-terminal1-пассажир",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Рейс",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "куда",
+              "caption": "Куда",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Куда",
+          "name": "рейс",
+          "relatedTo": "i-i-s-terminal1-рейс",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
