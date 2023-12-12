@@ -28,13 +28,13 @@ export default Controller.extend({
             link: 'i-i-s-terminal1-посад-талон-l',
             caption: i18n.t('forms.application.sitemap.terminal1.i-i-s-terminal1-посад-талон-l.caption'),
             title: i18n.t('forms.application.sitemap.terminal1.i-i-s-terminal1-посад-талон-l.title'),
-            icon: 'table',
+            icon: 'calendar',
             children: null
           }, {
             link: 'i-i-s-terminal1-класс-билета-l',
             caption: i18n.t('forms.application.sitemap.terminal1.i-i-s-terminal1-класс-билета-l.caption'),
             title: i18n.t('forms.application.sitemap.terminal1.i-i-s-terminal1-класс-билета-l.title'),
-            icon: 'address card',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-terminal1-коды-l',
@@ -46,13 +46,13 @@ export default Controller.extend({
             link: 'i-i-s-terminal1-рейс-l',
             caption: i18n.t('forms.application.sitemap.terminal1.i-i-s-terminal1-рейс-l.caption'),
             title: i18n.t('forms.application.sitemap.terminal1.i-i-s-terminal1-рейс-l.title'),
-            icon: 'folder',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-terminal1-пассажир-l',
             caption: i18n.t('forms.application.sitemap.terminal1.i-i-s-terminal1-пассажир-l.caption'),
             title: i18n.t('forms.application.sitemap.terminal1.i-i-s-terminal1-пассажир-l.title'),
-            icon: 'table',
+            icon: 'file',
             children: null
           }]
         }
