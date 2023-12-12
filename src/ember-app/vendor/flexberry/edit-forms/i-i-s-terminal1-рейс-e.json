@@ -1,5 +1,14 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": "пассажир",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "ИнфБронь.Пассажир",
+      "projection": "ПассажирL",
+      "detailModelName": "i-i-s-terminal1-инф-бронь"
+    }
+  ],
   "external": false,
   "caption": "Рейс",
   "name": "IISTerminal1РейсE",
