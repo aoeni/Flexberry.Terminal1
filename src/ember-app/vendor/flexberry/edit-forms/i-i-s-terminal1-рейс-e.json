@@ -1,12 +1,12 @@
 ﻿{
   "propertyLookup": [
     {
-      "master": null,
-      "displayAttributeName": null,
-      "required": false,
+      "master": "пассажир",
+      "displayAttributeName": "фИО",
+      "required": true,
       "relationName": "ИнфБронь.Пассажир",
       "projection": "ПассажирL",
-      "detailModelName": null
+      "detailModelName": "i-i-s-terminal1-инф-бронь"
     }
   ],
   "external": false,

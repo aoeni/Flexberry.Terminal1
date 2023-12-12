@@ -78,7 +78,13 @@ export let defineProjections = function (modelClass) {
     конецПосад: attr('Конец посадки', { index: 5 }),
     выход: attr('Выход', { index: 6 }),
     инфБронь: hasMany('i-i-s-terminal1-инф-бронь', 'Информация бронирования', {
-      
+      пассажир: belongsTo('i-i-s-terminal1-пассажир', 'Пассажир', {
+        фИО: attr('ФИО', { index: 1, hidden: true }),
+        классБилета: belongsTo('i-i-s-terminal1-класс-билета', '', {
+          класс: attr('Класс билета', { index: 2 }),
+          место: attr('Место', { index: 3 })
+        }, { index: -1, hidden: true })
+      }, { index: 0, displayMemberPath: 'фИО' })
     })
   });
 
