@@ -21,17 +21,19 @@ namespace IIS.Terminal1
 
 
     /// <summary>
-    /// Инф бронь.
+    /// ИнфБронь.
     /// </summary>
     // *** Start programmer edit section *** (ИнфБронь CustomAttributes)
 
     // *** End programmer edit section *** (ИнфБронь CustomAttributes)
     [AutoAltered()]
-    [Caption("Инф бронь")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
-    [View("ИнфБроньE", new string[] {
-            "Пассажир as \'Пассажир\'"})]
-    [MasterViewDefineAttribute("ИнфБроньE", "Пассажир", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
+    [View("ИнфБроньЕ", new string[] {
+            "Пассажир as \'Пассажир\'",
+            "Пассажир.ФИО as \'ФИО\'",
+            "Пассажир.КлассБилета.Класс as \'Класс билета\'",
+            "Пассажир.КлассБилета.Место as \'Место\'"})]
+    [MasterViewDefineAttribute("ИнфБроньЕ", "Пассажир", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     public class ИнфБронь : ICSSoft.STORMNET.DataObject
     {
         
@@ -45,7 +47,7 @@ namespace IIS.Terminal1
 
         
         /// <summary>
-        /// Инф бронь.
+        /// ИнфБронь.
         /// </summary>
         // *** Start programmer edit section *** (ИнфБронь.Пассажир CustomAttributes)
 
@@ -120,13 +122,13 @@ namespace IIS.Terminal1
         {
             
             /// <summary>
-            /// "ИнфБроньE" view.
+            /// "ИнфБроньЕ" view.
             /// </summary>
-            public static ICSSoft.STORMNET.View ИнфБроньE
+            public static ICSSoft.STORMNET.View ИнфБроньЕ
             {
                 get
                 {
-                    return ICSSoft.STORMNET.Information.GetView("ИнфБроньE", typeof(IIS.Terminal1.ИнфБронь));
+                    return ICSSoft.STORMNET.Information.GetView("ИнфБроньЕ", typeof(IIS.Terminal1.ИнфБронь));
                 }
             }
         }

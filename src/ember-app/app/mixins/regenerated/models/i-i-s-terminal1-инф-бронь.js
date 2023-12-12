@@ -27,9 +27,13 @@ export let ValidationRules = {
 };
 
 export let defineProjections = function (modelClass) {
-  modelClass.defineProjection('ИнфБроньE', 'i-i-s-terminal1-инф-бронь', {
+  modelClass.defineProjection('ИнфБроньЕ', 'i-i-s-terminal1-инф-бронь', {
     пассажир: belongsTo('i-i-s-terminal1-пассажир', 'Пассажир', {
-
+      фИО: attr('ФИО', { index: 1 }),
+      классБилета: belongsTo('i-i-s-terminal1-класс-билета', '', {
+        класс: attr('Класс билета', { index: 2 }),
+        место: attr('Место', { index: 3 })
+      }, { index: -1, hidden: true })
     }, { index: 0, displayMemberPath: 'фИО' })
   });
 };
