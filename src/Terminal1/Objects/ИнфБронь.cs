@@ -36,7 +36,6 @@ namespace IIS.Terminal1
             "Пассажир.ФИО as \'ФИО\'",
             "Пассажир.КлассБилета.Класс as \'Класс билета\'",
             "Пассажир.КлассБилета.Место as \'Место\'"}, Hidden=new string[] {
-            "Пассажир.Коды.КодБрони",
             "Пассажир.ФИО"})]
     [MasterViewDefineAttribute("ИнфБроньE", "Пассажир", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
     public class ИнфБронь : ICSSoft.STORMNET.DataObject
